@@ -34,8 +34,8 @@ func main() {
 		SumNumbers(ints),
 		SumNumbers(floats))
 
-	cat := animal.Cat{}
-	cat.Move()
+	cat := animal.NewCat("Mei")
+	animal.TouchAnimal(&cat)
 }
 
 // SumInts adds together the values of m.
