@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"fortuna/animal"
+)
 
 type Number interface {
 	int64 | float64
@@ -29,6 +33,9 @@ func main() {
 	fmt.Printf("Generic Sums with Constraint: %v and %v\n",
 		SumNumbers(ints),
 		SumNumbers(floats))
+
+	cat := animal.Cat{}
+	cat.Move()
 }
 
 // SumInts adds together the values of m.
